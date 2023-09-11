@@ -1,0 +1,42 @@
+server:
+  port: 8085
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/reggie?characterEncoding=utf-8
+    username: root
+    password: hhh1234
+  application:
+    # 应用的名称，可选
+    name: reggie_take_out
+    props:
+      sql:
+        show: true # 开启SQL显示，默认false
+  main:
+    allow-bean-definition-overriding: true
+  redis:
+    host: localhost
+    port: 6379
+    # password: hhh1234
+    database: 0
+  cache:
+    redis:
+      time-to-live: 1800000 # 设置缓存数据的过期时间
+mybatis-plus:
+  configuration:
+    # 在映射实体或者属性时，将数据库中表名和字段名中的下划线去掉，按照驼峰命名法映射
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: ASSIGN_ID
+reggie:
+  path: D:\Programming\Projects\reggie_take_out\img\
+
+# 日志
+logging:
+  file:
+    path: D:\Programming\Projects\reggie_take_out\log
+  level:
+    root: info

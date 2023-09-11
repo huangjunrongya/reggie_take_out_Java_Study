@@ -1,0 +1,331 @@
+2023-08-24 17:41:01.127  INFO 17948 --- [main] com.itheima.reggie.ReggieApplication     : Starting ReggieApplication using Java 1.8.0_362 on HuangH with PID 17948 (D:\Programming\Projects\reggie_take_out\target\classes started by HuangH in D:\Programming\Projects\reggie_take_out)
+2023-08-24 17:41:01.132  INFO 17948 --- [main] com.itheima.reggie.ReggieApplication     : No active profile set, falling back to default profiles: default
+2023-08-24 17:41:02.559  INFO 17948 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-08-24 17:41:02.562  INFO 17948 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-24 17:41:02.597  INFO 17948 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2023-08-24 17:41:02.899  INFO 17948 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.itheima.reggie.config.RedisConfig$$EnhancerBySpringCGLIB$$61394189] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-24 17:41:03.179  INFO 17948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2023-08-24 17:41:03.189  INFO 17948 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-24 17:41:03.190  INFO 17948 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2023-08-24 17:41:03.283  INFO 17948 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-24 17:41:03.284  INFO 17948 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2102 ms
+2023-08-24 17:41:03.442  INFO 17948 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-08-24 17:41:03.542  INFO 17948 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-08-24 17:41:05.086  INFO 17948 --- [main] com.itheima.reggie.config.WebMvcConfig   : 扩展消息转换器...
+2023-08-24 17:41:05.093  INFO 17948 --- [main] com.itheima.reggie.config.WebMvcConfig   : 开始进行静态资源映射...
+2023-08-24 17:41:05.449  WARN 17948 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 80 is already in use
+2023-08-24 17:41:05.471  INFO 17948 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-08-24 17:41:05.472  INFO 17948 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-08-24 17:41:05.474  INFO 17948 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-24 17:41:05.484  INFO 17948 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-08-24 17:41:05.495 ERROR 17948 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
+2023-08-24 17:41:21.823  INFO 16444 --- [main] com.itheima.reggie.ReggieApplication     : Starting ReggieApplication using Java 1.8.0_362 on HuangH with PID 16444 (D:\Programming\Projects\reggie_take_out\target\classes started by HuangH in D:\Programming\Projects\reggie_take_out)
+2023-08-24 17:41:21.826  INFO 16444 --- [main] com.itheima.reggie.ReggieApplication     : No active profile set, falling back to default profiles: default
+2023-08-24 17:41:22.591  INFO 16444 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-08-24 17:41:22.593  INFO 16444 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-24 17:41:22.616  INFO 16444 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2023-08-24 17:41:22.839  INFO 16444 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.itheima.reggie.config.RedisConfig$$EnhancerBySpringCGLIB$$6f6cf0dc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-24 17:41:23.055  INFO 16444 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2023-08-24 17:41:23.063  INFO 16444 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-24 17:41:23.064  INFO 16444 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2023-08-24 17:41:23.138  INFO 16444 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-24 17:41:23.139  INFO 16444 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1271 ms
+2023-08-24 17:41:23.271  INFO 16444 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-08-24 17:41:23.337  INFO 16444 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-08-24 17:41:24.633  INFO 16444 --- [main] com.itheima.reggie.config.WebMvcConfig   : 扩展消息转换器...
+2023-08-24 17:41:24.638  INFO 16444 --- [main] com.itheima.reggie.config.WebMvcConfig   : 开始进行静态资源映射...
+2023-08-24 17:41:24.971  WARN 16444 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8083 is already in use
+2023-08-24 17:41:24.990  INFO 16444 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-08-24 17:41:24.991  INFO 16444 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-08-24 17:41:24.993  INFO 16444 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-24 17:41:25.003  INFO 16444 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-08-24 17:41:25.015 ERROR 16444 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8083 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8083 or configure this application to listen on another port.
+
+2023-08-24 17:42:08.228  INFO 21004 --- [main] com.itheima.reggie.ReggieApplication     : Starting ReggieApplication using Java 1.8.0_362 on HuangH with PID 21004 (D:\Programming\Projects\reggie_take_out\target\classes started by HuangH in D:\Programming\Projects\reggie_take_out)
+2023-08-24 17:42:08.231  INFO 21004 --- [main] com.itheima.reggie.ReggieApplication     : No active profile set, falling back to default profiles: default
+2023-08-24 17:42:09.027  INFO 21004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-08-24 17:42:09.028  INFO 21004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-24 17:42:09.051  INFO 21004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2023-08-24 17:42:09.268  INFO 21004 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.itheima.reggie.config.RedisConfig$$EnhancerBySpringCGLIB$$4d6a1220] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-24 17:42:09.509  INFO 21004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2023-08-24 17:42:09.520  INFO 21004 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-24 17:42:09.520  INFO 21004 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2023-08-24 17:42:09.594  INFO 21004 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-24 17:42:09.594  INFO 21004 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1317 ms
+2023-08-24 17:42:09.724  INFO 21004 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-08-24 17:42:09.803  INFO 21004 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-08-24 17:42:11.100  INFO 21004 --- [main] com.itheima.reggie.config.WebMvcConfig   : 扩展消息转换器...
+2023-08-24 17:42:11.105  INFO 21004 --- [main] com.itheima.reggie.config.WebMvcConfig   : 开始进行静态资源映射...
+2023-08-24 17:42:11.419  WARN 21004 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8083 is already in use
+2023-08-24 17:42:11.435  INFO 21004 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-08-24 17:42:11.436  INFO 21004 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-08-24 17:42:11.438  INFO 21004 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-24 17:42:11.447  INFO 21004 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-08-24 17:42:11.458 ERROR 21004 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8083 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8083 or configure this application to listen on another port.
+
+2023-08-24 17:42:23.074  INFO 9340 --- [main] com.itheima.reggie.ReggieApplication     : Starting ReggieApplication using Java 1.8.0_362 on HuangH with PID 9340 (D:\Programming\Projects\reggie_take_out\target\classes started by HuangH in D:\Programming\Projects\reggie_take_out)
+2023-08-24 17:42:23.077  INFO 9340 --- [main] com.itheima.reggie.ReggieApplication     : No active profile set, falling back to default profiles: default
+2023-08-24 17:42:23.862  INFO 9340 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-08-24 17:42:23.863  INFO 9340 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-24 17:42:23.889  INFO 9340 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2023-08-24 17:42:24.118  INFO 9340 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.itheima.reggie.config.RedisConfig$$EnhancerBySpringCGLIB$$4d6a1220] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-24 17:42:24.337  INFO 9340 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+2023-08-24 17:42:24.345  INFO 9340 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-24 17:42:24.345  INFO 9340 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2023-08-24 17:42:24.405  INFO 9340 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-24 17:42:24.405  INFO 9340 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1280 ms
+2023-08-24 17:42:24.531  INFO 9340 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-08-24 17:42:24.610  INFO 9340 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-08-24 17:42:26.035  INFO 9340 --- [main] com.itheima.reggie.config.WebMvcConfig   : 扩展消息转换器...
+2023-08-24 17:42:26.040  INFO 9340 --- [main] com.itheima.reggie.config.WebMvcConfig   : 开始进行静态资源映射...
+2023-08-24 17:42:26.412  WARN 9340 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8084 is already in use
+2023-08-24 17:42:26.427  INFO 9340 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-08-24 17:42:26.428  INFO 9340 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-08-24 17:42:26.430  INFO 9340 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-24 17:42:26.439  INFO 9340 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-08-24 17:42:26.449 ERROR 9340 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8084 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8084 or configure this application to listen on another port.
+
+2023-08-24 17:42:38.045  INFO 5040 --- [main] com.itheima.reggie.ReggieApplication     : Starting ReggieApplication using Java 1.8.0_362 on HuangH with PID 5040 (D:\Programming\Projects\reggie_take_out\target\classes started by HuangH in D:\Programming\Projects\reggie_take_out)
+2023-08-24 17:42:38.048  INFO 5040 --- [main] com.itheima.reggie.ReggieApplication     : No active profile set, falling back to default profiles: default
+2023-08-24 17:42:38.869  INFO 5040 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-08-24 17:42:38.871  INFO 5040 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-24 17:42:38.896  INFO 5040 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2023-08-24 17:42:39.132  INFO 5040 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.itheima.reggie.config.RedisConfig$$EnhancerBySpringCGLIB$$2cb86f4e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-24 17:42:39.370  INFO 5040 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2023-08-24 17:42:39.378  INFO 5040 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-24 17:42:39.378  INFO 5040 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2023-08-24 17:42:39.450  INFO 5040 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-24 17:42:39.450  INFO 5040 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1356 ms
+2023-08-24 17:42:39.588  INFO 5040 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-08-24 17:42:39.676  INFO 5040 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-08-24 17:42:41.019  INFO 5040 --- [main] com.itheima.reggie.config.WebMvcConfig   : 扩展消息转换器...
+2023-08-24 17:42:41.024  INFO 5040 --- [main] com.itheima.reggie.config.WebMvcConfig   : 开始进行静态资源映射...
+2023-08-24 17:42:41.348  INFO 5040 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2023-08-24 17:42:41.489  WARN 5040 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.itheima.reggie.common.R<com.itheima.reggie.entity.AddressBook>) -> ModelContext{groupName=default, type=com.itheima.reggie.common.R<com.itheima.reggie.entity.AddressBook>, isReturnType=true, view=Optional.empty}. 1
+2023-08-24 17:42:41.498  WARN 5040 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.itheima.reggie.common.R<com.itheima.reggie.entity.AddressBook>) -> ModelContext{groupName=default, type=com.itheima.reggie.common.R<com.itheima.reggie.entity.AddressBook>, isReturnType=true, view=Optional.empty}. 1
+2023-08-24 17:42:41.526  WARN 5040 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.itheima.reggie.common.R<java.util.List<com.itheima.reggie.entity.AddressBook>>) -> ModelContext{groupName=default, type=com.itheima.reggie.common.R<java.util.List<com.itheima.reggie.entity.AddressBook>>, isReturnType=true, view=Optional.empty}. 1
+2023-08-24 17:42:41.529  WARN 5040 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.itheima.reggie.common.R<java.util.List<com.itheima.reggie.entity.AddressBook>>) -> ModelContext{groupName=default, type=com.itheima.reggie.common.R<java.util.List<com.itheima.reggie.entity.AddressBook>>, isReturnType=true, view=Optional.empty}. 1
+2023-08-24 17:42:41.557  WARN 5040 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.itheima.reggie.common.R<com.baomidou.mybatisplus.extension.plugins.pagination.Page>) -> ModelContext{groupName=default, type=com.itheima.reggie.common.R<com.baomidou.mybatisplus.extension.plugins.pagination.Page>, isReturnType=true, view=Optional.empty}. 1
+2023-08-24 17:42:41.568  WARN 5040 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.itheima.reggie.common.R<com.baomidou.mybatisplus.extension.plugins.pagination.Page>) -> ModelContext{groupName=default, type=com.itheima.reggie.common.R<com.baomidou.mybatisplus.extension.plugins.pagination.Page>, isReturnType=true, view=Optional.empty}. 1
+2023-08-24 17:42:41.578  WARN 5040 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.itheima.reggie.common.R<java.lang.String>) -> ModelContext{groupName=default, type=com.itheima.reggie.common.R<java.lang.String>, isReturnType=true, view=Optional.empty}. 1
+2023-08-24 17:42:41.580  WARN 5040 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.itheima.reggie.common.R<java.lang.String>) -> ModelContext{groupName=default, type=com.itheima.reggie.common.R<java.lang.String>, isReturnType=true, view=Optional.empty}. 1
+2023-08-24 17:42:41.593  WARN 5040 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.itheima.reggie.common.R<java.util.List<com.itheima.reggie.entity.Category>>) -> ModelContext{groupName=default, type=com.itheima.reggie.common.R<java.util.List<com.itheima.reggie.entity.Category>>, isReturnType=true, view=Optional.empty}. 1
+2023-08-24 17:42:41.597  WARN 5040 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.itheima.reggie.common.R<java.util.List<com.itheima.reggie.entity.Category>>) -> ModelContext{groupName=default, type=com.itheima.reggie.common.R<java.util.List<com.itheima.reggie.entity.Category>>, isReturnType=true, view=Optional.empty}. 1
+2023-08-24 17:42:41.615  WARN 5040 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.itheima.reggie.common.R<com.itheima.reggie.dto.DishDto>) -> ModelContext{groupName=default, type=com.itheima.reggie.common.R<com.itheima.reggie.dto.DishDto>, isReturnType=true, view=Optional.empty}. 1
+2023-08-24 17:42:41.621  WARN 5040 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.itheima.reggie.common.R<com.itheima.reggie.dto.DishDto>) -> ModelContext{groupName=default, type=com.itheima.reggie.common.R<com.itheima.reggie.dto.DishDto>, isReturnType=true, view=Optional.empty}. 1
+2023-08-24 17:42:41.642  WARN 5040 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.itheima.reggie.common.R<java.util.List<com.itheima.reggie.dto.DishDto>>) -> ModelContext{groupName=default, type=com.itheima.reggie.common.R<java.util.List<com.itheima.reggie.dto.DishDto>>, isReturnType=true, view=Optional.empty}. 1
+2023-08-24 17:42:41.643  WARN 5040 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.itheima.reggie.common.R<java.util.List<com.itheima.reggie.dto.DishDto>>) -> ModelContext{groupName=default, type=com.itheima.reggie.common.R<java.util.List<com.itheima.reggie.dto.DishDto>>, isReturnType=true, view=Optional.empty}. 1
+2023-08-24 17:42:41.655  WARN 5040 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.itheima.reggie.common.R<com.itheima.reggie.entity.Employee>) -> ModelContext{groupName=default, type=com.itheima.reggie.common.R<com.itheima.reggie.entity.Employee>, isReturnType=true, view=Optional.empty}. 1
+2023-08-24 17:42:41.657  WARN 5040 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.itheima.reggie.common.R<com.itheima.reggie.entity.Employee>) -> ModelContext{groupName=default, type=com.itheima.reggie.common.R<com.itheima.reggie.entity.Employee>, isReturnType=true, view=Optional.empty}. 1
+2023-08-24 17:42:41.682  WARN 5040 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: , dataTypeClass: class java.lang.Void
+2023-08-24 17:42:41.684  WARN 5040 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: , dataTypeClass: class java.lang.Void
+2023-08-24 17:42:41.685  WARN 5040 --- [main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: , dataTypeClass: class java.lang.Void
+2023-08-24 17:42:41.712  WARN 5040 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.itheima.reggie.common.R<java.util.List<com.itheima.reggie.entity.Setmeal>>) -> ModelContext{groupName=default, type=com.itheima.reggie.common.R<java.util.List<com.itheima.reggie.entity.Setmeal>>, isReturnType=true, view=Optional.empty}. 1
+2023-08-24 17:42:41.716  WARN 5040 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.itheima.reggie.common.R<java.util.List<com.itheima.reggie.entity.Setmeal>>) -> ModelContext{groupName=default, type=com.itheima.reggie.common.R<java.util.List<com.itheima.reggie.entity.Setmeal>>, isReturnType=true, view=Optional.empty}. 1
+2023-08-24 17:42:41.726  WARN 5040 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.itheima.reggie.common.R<com.itheima.reggie.entity.ShoppingCart>) -> ModelContext{groupName=default, type=com.itheima.reggie.common.R<com.itheima.reggie.entity.ShoppingCart>, isReturnType=true, view=Optional.empty}. 1
+2023-08-24 17:42:41.729  WARN 5040 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.itheima.reggie.common.R<com.itheima.reggie.entity.ShoppingCart>) -> ModelContext{groupName=default, type=com.itheima.reggie.common.R<com.itheima.reggie.entity.ShoppingCart>, isReturnType=true, view=Optional.empty}. 1
+2023-08-24 17:42:41.737  WARN 5040 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.itheima.reggie.common.R<java.util.List<com.itheima.reggie.entity.ShoppingCart>>) -> ModelContext{groupName=default, type=com.itheima.reggie.common.R<java.util.List<com.itheima.reggie.entity.ShoppingCart>>, isReturnType=true, view=Optional.empty}. 1
+2023-08-24 17:42:41.738  WARN 5040 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.itheima.reggie.common.R<java.util.List<com.itheima.reggie.entity.ShoppingCart>>) -> ModelContext{groupName=default, type=com.itheima.reggie.common.R<java.util.List<com.itheima.reggie.entity.ShoppingCart>>, isReturnType=true, view=Optional.empty}. 1
+2023-08-24 17:42:41.742  WARN 5040 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.itheima.reggie.common.R<com.itheima.reggie.entity.User>) -> ModelContext{groupName=default, type=com.itheima.reggie.common.R<com.itheima.reggie.entity.User>, isReturnType=true, view=Optional.empty}. 1
+2023-08-24 17:42:41.744  WARN 5040 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.itheima.reggie.common.R<com.itheima.reggie.entity.User>) -> ModelContext{groupName=default, type=com.itheima.reggie.common.R<com.itheima.reggie.entity.User>, isReturnType=true, view=Optional.empty}. 1
+2023-08-24 17:42:41.768  INFO 5040 --- [main] com.itheima.reggie.ReggieApplication     : Started ReggieApplication in 4.147 seconds (JVM running for 4.906)
+2023-08-24 17:42:41.770  INFO 5040 --- [main] com.itheima.reggie.ReggieApplication     : 项目启动成功...
+2023-08-24 17:43:05.173  INFO 5040 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-24 17:43:05.173  INFO 5040 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-24 17:43:05.174  INFO 5040 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-08-24 17:43:05.177  INFO 5040 --- [http-nio-8085-exec-1] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/index.html
+2023-08-24 17:43:05.177  INFO 5040 --- [http-nio-8085-exec-1] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/index.html不需要处理
+2023-08-24 17:43:05.255  INFO 5040 --- [http-nio-8085-exec-4] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/plugins/element-ui/index.css
+2023-08-24 17:43:05.255  INFO 5040 --- [http-nio-8085-exec-4] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/plugins/element-ui/index.css不需要处理
+2023-08-24 17:43:05.264  INFO 5040 --- [http-nio-8085-exec-3] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/styles/common.css
+2023-08-24 17:43:05.265  INFO 5040 --- [http-nio-8085-exec-3] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/styles/common.css不需要处理
+2023-08-24 17:43:05.265  INFO 5040 --- [http-nio-8085-exec-8] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/styles/index.css
+2023-08-24 17:43:05.265  INFO 5040 --- [http-nio-8085-exec-10] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/styles/icon/iconfont.css
+2023-08-24 17:43:05.265  INFO 5040 --- [http-nio-8085-exec-8] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/styles/index.css不需要处理
+2023-08-24 17:43:05.265  INFO 5040 --- [http-nio-8085-exec-10] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/styles/icon/iconfont.css不需要处理
+2023-08-24 17:43:05.289  INFO 5040 --- [http-nio-8085-exec-9] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/js/request.js
+2023-08-24 17:43:05.289  INFO 5040 --- [http-nio-8085-exec-6] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/plugins/vue/vue.js
+2023-08-24 17:43:05.289  INFO 5040 --- [http-nio-8085-exec-7] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/plugins/axios/axios.min.js
+2023-08-24 17:43:05.289  INFO 5040 --- [http-nio-8085-exec-2] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/plugins/element-ui/index.js
+2023-08-24 17:43:05.290  INFO 5040 --- [http-nio-8085-exec-9] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/js/request.js不需要处理
+2023-08-24 17:43:05.290  INFO 5040 --- [http-nio-8085-exec-6] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/plugins/vue/vue.js不需要处理
+2023-08-24 17:43:05.290  INFO 5040 --- [http-nio-8085-exec-2] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/plugins/element-ui/index.js不需要处理
+2023-08-24 17:43:05.290  INFO 5040 --- [http-nio-8085-exec-7] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/plugins/axios/axios.min.js不需要处理
+2023-08-24 17:43:05.290  INFO 5040 --- [http-nio-8085-exec-1] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/images/login/login-logo.png
+2023-08-24 17:43:05.290  INFO 5040 --- [http-nio-8085-exec-5] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/api/login.js
+2023-08-24 17:43:05.290  INFO 5040 --- [http-nio-8085-exec-1] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/images/login/login-logo.png不需要处理
+2023-08-24 17:43:05.290  INFO 5040 --- [http-nio-8085-exec-5] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/api/login.js不需要处理
+2023-08-24 17:43:05.295  INFO 5040 --- [http-nio-8085-exec-4] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/images/icons/btn_back@2x.png
+2023-08-24 17:43:05.296  INFO 5040 --- [http-nio-8085-exec-4] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/images/icons/btn_back@2x.png不需要处理
+2023-08-24 17:43:05.301  INFO 5040 --- [http-nio-8085-exec-10] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/images/icons/btn_close@2x.png
+2023-08-24 17:43:05.301  INFO 5040 --- [http-nio-8085-exec-10] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/images/icons/btn_close@2x.png不需要处理
+2023-08-24 17:43:05.342  INFO 5040 --- [http-nio-8085-exec-8] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/styles/icon/iconfont.woff2
+2023-08-24 17:43:05.342  INFO 5040 --- [http-nio-8085-exec-8] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/styles/icon/iconfont.woff2不需要处理
+2023-08-24 17:43:05.481  INFO 5040 --- [http-nio-8085-exec-3] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/page/member/list.html
+2023-08-24 17:43:05.481  INFO 5040 --- [http-nio-8085-exec-3] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/page/member/list.html不需要处理
+2023-08-24 17:43:05.509  INFO 5040 --- [http-nio-8085-exec-4] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/api/member.js
+2023-08-24 17:43:05.509  INFO 5040 --- [http-nio-8085-exec-1] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/styles/page.css
+2023-08-24 17:43:05.509  INFO 5040 --- [http-nio-8085-exec-4] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/api/member.js不需要处理
+2023-08-24 17:43:05.509  INFO 5040 --- [http-nio-8085-exec-1] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/styles/page.css不需要处理
+2023-08-24 17:43:05.576  INFO 5040 --- [http-nio-8085-exec-10] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/employee/page
+2023-08-24 17:43:05.582  INFO 5040 --- [http-nio-8085-exec-10] c.i.reggie.filter.LoginCheckFilter       : 用户未登录
+2023-08-24 17:43:05.584  INFO 5040 --- [http-nio-8085-exec-5] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/favicon.ico
+2023-08-24 17:43:05.584  INFO 5040 --- [http-nio-8085-exec-5] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/favicon.ico不需要处理
+2023-08-24 17:43:05.653  INFO 5040 --- [http-nio-8085-exec-9] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/page/login/login.html
+2023-08-24 17:43:05.654  INFO 5040 --- [http-nio-8085-exec-9] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/page/login/login.html不需要处理
+2023-08-24 17:43:05.687  INFO 5040 --- [http-nio-8085-exec-7] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/styles/login.css
+2023-08-24 17:43:05.687  INFO 5040 --- [http-nio-8085-exec-7] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/styles/login.css不需要处理
+2023-08-24 17:43:05.687  INFO 5040 --- [http-nio-8085-exec-8] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/images/login/login-l.png
+2023-08-24 17:43:05.687  INFO 5040 --- [http-nio-8085-exec-8] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/images/login/login-l.png不需要处理
+2023-08-24 17:43:05.696  INFO 5040 --- [http-nio-8085-exec-6] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/js/validate.js
+2023-08-24 17:43:05.697  INFO 5040 --- [http-nio-8085-exec-6] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/js/validate.js不需要处理
+2023-08-24 17:43:05.698  INFO 5040 --- [http-nio-8085-exec-2] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/images/login/logo.png
+2023-08-24 17:43:05.698  INFO 5040 --- [http-nio-8085-exec-2] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/images/login/logo.png不需要处理
+2023-08-24 17:43:07.179  INFO 5040 --- [http-nio-8085-exec-3] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/employee/login
+2023-08-24 17:43:07.179  INFO 5040 --- [http-nio-8085-exec-3] c.i.reggie.filter.LoginCheckFilter       : 本次请求/employee/login不需要处理
+2023-08-24 17:43:07.181  INFO 5040 --- [http-nio-8085-exec-1] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/styles/fonts/element-icons.woff
+2023-08-24 17:43:07.181  INFO 5040 --- [http-nio-8085-exec-1] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/styles/fonts/element-icons.woff不需要处理
+2023-08-24 17:43:07.592  INFO 5040 --- [http-nio-8085-exec-4] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/employee/page
+2023-08-24 17:43:07.593  INFO 5040 --- [http-nio-8085-exec-4] c.i.reggie.filter.LoginCheckFilter       : 用户已登录，用户id为：1
+2023-08-24 17:43:07.598  INFO 5040 --- [http-nio-8085-exec-4] c.i.r.controller.EmployeeController      : page = 1,pageSize = 2,name = null
+2023-08-24 17:43:09.972  INFO 5040 --- [http-nio-8085-exec-5] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/page/category/list.html
+2023-08-24 17:43:09.973  INFO 5040 --- [http-nio-8085-exec-5] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/page/category/list.html不需要处理
+2023-08-24 17:43:09.996  INFO 5040 --- [http-nio-8085-exec-10] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/api/category.js
+2023-08-24 17:43:09.997  INFO 5040 --- [http-nio-8085-exec-10] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/api/category.js不需要处理
+2023-08-24 17:43:10.036  INFO 5040 --- [http-nio-8085-exec-9] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/category/page
+2023-08-24 17:43:10.036  INFO 5040 --- [http-nio-8085-exec-9] c.i.reggie.filter.LoginCheckFilter       : 用户已登录，用户id为：1
+2023-08-24 17:43:11.993  INFO 5040 --- [http-nio-8085-exec-2] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/employee/page
+2023-08-24 17:43:11.994  INFO 5040 --- [http-nio-8085-exec-2] c.i.reggie.filter.LoginCheckFilter       : 用户已登录，用户id为：1
+2023-08-24 17:43:11.994  INFO 5040 --- [http-nio-8085-exec-2] c.i.r.controller.EmployeeController      : page = 1,pageSize = 2,name = null
+2023-08-24 17:43:16.681  INFO 5040 --- [http-nio-8085-exec-7] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/plugins/axios/axios.min.map
+2023-08-24 17:43:16.682  INFO 5040 --- [http-nio-8085-exec-7] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/plugins/axios/axios.min.map不需要处理
+2023-08-24 17:43:19.002  INFO 5040 --- [http-nio-8085-exec-8] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/page/combo/list.html
+2023-08-24 17:43:19.002  INFO 5040 --- [http-nio-8085-exec-8] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/page/combo/list.html不需要处理
+2023-08-24 17:43:19.031  INFO 5040 --- [http-nio-8085-exec-6] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/api/combo.js
+2023-08-24 17:43:19.032  INFO 5040 --- [http-nio-8085-exec-6] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/api/combo.js不需要处理
+2023-08-24 17:43:19.177  INFO 5040 --- [http-nio-8085-exec-1] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/plugins/axios/axios.min.map
+2023-08-24 17:43:19.177  INFO 5040 --- [http-nio-8085-exec-1] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/plugins/axios/axios.min.map不需要处理
+2023-08-24 17:43:19.195  INFO 5040 --- [http-nio-8085-exec-3] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/setmeal/page
+2023-08-24 17:43:19.195  INFO 5040 --- [http-nio-8085-exec-3] c.i.reggie.filter.LoginCheckFilter       : 用户已登录，用户id为：1
+2023-08-24 17:43:19.264  INFO 5040 --- [http-nio-8085-exec-4] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/common/download
+2023-08-24 17:43:19.264  INFO 5040 --- [http-nio-8085-exec-4] c.i.reggie.filter.LoginCheckFilter       : 本次请求/common/download不需要处理
+2023-08-24 17:43:19.272  INFO 5040 --- [http-nio-8085-exec-5] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/images/noImg.png
+2023-08-24 17:43:19.273  INFO 5040 --- [http-nio-8085-exec-5] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/images/noImg.png不需要处理
+2023-08-24 17:43:29.729  INFO 5040 --- [http-nio-8085-exec-10] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/plugins/axios/axios.min.map
+2023-08-24 17:43:29.729  INFO 5040 --- [http-nio-8085-exec-10] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/plugins/axios/axios.min.map不需要处理
+2023-08-24 17:43:29.748  INFO 5040 --- [http-nio-8085-exec-9] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/category/page
+2023-08-24 17:43:29.749  INFO 5040 --- [http-nio-8085-exec-9] c.i.reggie.filter.LoginCheckFilter       : 用户已登录，用户id为：1
+2023-08-24 17:43:37.231  INFO 5040 --- [http-nio-8085-exec-2] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/page/food/list.html
+2023-08-24 17:43:37.231  INFO 5040 --- [http-nio-8085-exec-2] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/page/food/list.html不需要处理
+2023-08-24 17:43:37.263  INFO 5040 --- [http-nio-8085-exec-7] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/api/food.js
+2023-08-24 17:43:37.263  INFO 5040 --- [http-nio-8085-exec-7] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/api/food.js不需要处理
+2023-08-24 17:43:37.419  INFO 5040 --- [http-nio-8085-exec-8] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/backend/plugins/axios/axios.min.map
+2023-08-24 17:43:37.419  INFO 5040 --- [http-nio-8085-exec-8] c.i.reggie.filter.LoginCheckFilter       : 本次请求/backend/plugins/axios/axios.min.map不需要处理
+2023-08-24 17:43:37.435  INFO 5040 --- [http-nio-8085-exec-6] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/dish/page
+2023-08-24 17:43:37.435  INFO 5040 --- [http-nio-8085-exec-6] c.i.reggie.filter.LoginCheckFilter       : 用户已登录，用户id为：1
+2023-08-24 17:43:37.525  INFO 5040 --- [http-nio-8085-exec-3] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/common/download
+2023-08-24 17:43:37.525  INFO 5040 --- [http-nio-8085-exec-1] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/common/download
+2023-08-24 17:43:37.525  INFO 5040 --- [http-nio-8085-exec-3] c.i.reggie.filter.LoginCheckFilter       : 本次请求/common/download不需要处理
+2023-08-24 17:43:37.525  INFO 5040 --- [http-nio-8085-exec-4] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/common/download
+2023-08-24 17:43:37.525  INFO 5040 --- [http-nio-8085-exec-1] c.i.reggie.filter.LoginCheckFilter       : 本次请求/common/download不需要处理
+2023-08-24 17:43:37.525  INFO 5040 --- [http-nio-8085-exec-4] c.i.reggie.filter.LoginCheckFilter       : 本次请求/common/download不需要处理
+2023-08-24 17:43:37.526  INFO 5040 --- [http-nio-8085-exec-5] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/common/download
+2023-08-24 17:43:37.527  INFO 5040 --- [http-nio-8085-exec-10] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/common/download
+2023-08-24 17:43:37.527  INFO 5040 --- [http-nio-8085-exec-5] c.i.reggie.filter.LoginCheckFilter       : 本次请求/common/download不需要处理
+2023-08-24 17:43:37.527  INFO 5040 --- [http-nio-8085-exec-10] c.i.reggie.filter.LoginCheckFilter       : 本次请求/common/download不需要处理
+2023-08-24 17:43:37.527  INFO 5040 --- [http-nio-8085-exec-9] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/common/download
+2023-08-24 17:43:37.527  INFO 5040 --- [http-nio-8085-exec-9] c.i.reggie.filter.LoginCheckFilter       : 本次请求/common/download不需要处理
+2023-08-24 17:43:37.531  INFO 5040 --- [http-nio-8085-exec-2] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/common/download
+2023-08-24 17:43:37.531  INFO 5040 --- [http-nio-8085-exec-2] c.i.reggie.filter.LoginCheckFilter       : 本次请求/common/download不需要处理
+2023-08-24 17:43:37.532  INFO 5040 --- [http-nio-8085-exec-7] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/common/download
+2023-08-24 17:43:37.532  INFO 5040 --- [http-nio-8085-exec-7] c.i.reggie.filter.LoginCheckFilter       : 本次请求/common/download不需要处理
+2023-08-24 17:43:37.535  INFO 5040 --- [http-nio-8085-exec-8] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/common/download
+2023-08-24 17:43:37.535  INFO 5040 --- [http-nio-8085-exec-8] c.i.reggie.filter.LoginCheckFilter       : 本次请求/common/download不需要处理
+2023-08-24 17:43:37.535  INFO 5040 --- [http-nio-8085-exec-6] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/common/download
+2023-08-24 17:43:37.536  INFO 5040 --- [http-nio-8085-exec-6] c.i.reggie.filter.LoginCheckFilter       : 本次请求/common/download不需要处理
+2023-08-24 17:44:48.674  INFO 5040 --- [http-nio-8085-exec-2] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/setmeal/page
+2023-08-24 17:44:48.675  INFO 5040 --- [http-nio-8085-exec-2] c.i.reggie.filter.LoginCheckFilter       : 用户已登录，用户id为：1
+2023-08-24 17:44:48.798 ERROR 5040 --- [http-nio-8085-exec-2] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/reggie?characterEncoding=utf-8, jdbcUrl : jdbc:mysql://localhost:3306/reggie?characterEncoding=utf-8, lastPacketReceivedIdleMillis : 71184
+2023-08-24 17:44:48.830  INFO 5040 --- [http-nio-8085-exec-7] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/common/download
+2023-08-24 17:44:48.830  INFO 5040 --- [http-nio-8085-exec-7] c.i.reggie.filter.LoginCheckFilter       : 本次请求/common/download不需要处理
+2023-08-24 17:44:52.484  INFO 5040 --- [http-nio-8085-exec-8] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/dish/page
+2023-08-24 17:44:52.484  INFO 5040 --- [http-nio-8085-exec-8] c.i.reggie.filter.LoginCheckFilter       : 用户已登录，用户id为：1
+2023-08-24 17:44:52.542  INFO 5040 --- [http-nio-8085-exec-6] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/common/download
+2023-08-24 17:44:52.542  INFO 5040 --- [http-nio-8085-exec-6] c.i.reggie.filter.LoginCheckFilter       : 本次请求/common/download不需要处理
+2023-08-24 17:44:52.543  INFO 5040 --- [http-nio-8085-exec-5] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/common/download
+2023-08-24 17:44:52.543  INFO 5040 --- [http-nio-8085-exec-4] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/common/download
+2023-08-24 17:44:52.543  INFO 5040 --- [http-nio-8085-exec-5] c.i.reggie.filter.LoginCheckFilter       : 本次请求/common/download不需要处理
+2023-08-24 17:44:52.543  INFO 5040 --- [http-nio-8085-exec-9] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/common/download
+2023-08-24 17:44:52.543  INFO 5040 --- [http-nio-8085-exec-4] c.i.reggie.filter.LoginCheckFilter       : 本次请求/common/download不需要处理
+2023-08-24 17:44:52.543  INFO 5040 --- [http-nio-8085-exec-1] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/common/download
+2023-08-24 17:44:52.543  INFO 5040 --- [http-nio-8085-exec-3] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/common/download
+2023-08-24 17:44:52.543  INFO 5040 --- [http-nio-8085-exec-9] c.i.reggie.filter.LoginCheckFilter       : 本次请求/common/download不需要处理
+2023-08-24 17:44:52.543  INFO 5040 --- [http-nio-8085-exec-1] c.i.reggie.filter.LoginCheckFilter       : 本次请求/common/download不需要处理
+2023-08-24 17:44:52.543  INFO 5040 --- [http-nio-8085-exec-3] c.i.reggie.filter.LoginCheckFilter       : 本次请求/common/download不需要处理
+2023-08-24 17:44:52.546  INFO 5040 --- [http-nio-8085-exec-9] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/common/download
+2023-08-24 17:44:52.546  INFO 5040 --- [http-nio-8085-exec-9] c.i.reggie.filter.LoginCheckFilter       : 本次请求/common/download不需要处理
+2023-08-24 17:44:52.549  INFO 5040 --- [http-nio-8085-exec-7] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/common/download
+2023-08-24 17:44:52.549  INFO 5040 --- [http-nio-8085-exec-2] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/common/download
+2023-08-24 17:44:52.549  INFO 5040 --- [http-nio-8085-exec-7] c.i.reggie.filter.LoginCheckFilter       : 本次请求/common/download不需要处理
+2023-08-24 17:44:52.549  INFO 5040 --- [http-nio-8085-exec-2] c.i.reggie.filter.LoginCheckFilter       : 本次请求/common/download不需要处理
+2023-08-24 17:44:52.550  INFO 5040 --- [http-nio-8085-exec-8] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/common/download
+2023-08-24 17:44:52.550  INFO 5040 --- [http-nio-8085-exec-8] c.i.reggie.filter.LoginCheckFilter       : 本次请求/common/download不需要处理
+2023-08-24 17:45:03.961  INFO 5040 --- [http-nio-8085-exec-6] c.i.reggie.filter.LoginCheckFilter       : 拦截到请求：/category/page
+2023-08-24 17:45:03.961  INFO 5040 --- [http-nio-8085-exec-6] c.i.reggie.filter.LoginCheckFilter       : 用户已登录，用户id为：1
