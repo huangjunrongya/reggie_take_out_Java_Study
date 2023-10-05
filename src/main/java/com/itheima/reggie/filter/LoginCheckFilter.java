@@ -40,11 +40,11 @@ public class LoginCheckFilter implements Filter{
                 "/common/**",
                 "/user/sendMsg",
                 "/user/login",
-                //Knife4j
-                "/doc.html",
-                "/webjars/**",
-                "/swagger-resources",
-                "/v2/api-docs"
+//                //Knife4j
+//                "/doc.html",
+//                "/webjars/**",
+//                "/swagger-resources",
+//                "/v2/api-docs"
         };
 
         //2、判断本次请求是否需要处理

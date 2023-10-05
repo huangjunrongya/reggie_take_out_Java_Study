@@ -2,6 +2,7 @@ package com.itheima.reggie.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.itheima.reggie.common.CustomException;
 import com.itheima.reggie.common.R;
 import com.itheima.reggie.dto.DishDto;
 import com.itheima.reggie.entity.Category;
@@ -223,4 +224,41 @@ public class DishController {
         return R.success(dishDtoList);
     }
 
+    /**
+     * 对菜品进行停售或者是起售
+     */
+    @PostMapping("/status/{status}")
+    public R<String> status(@PathVariable("status") Integer status,Long ids){
+        log.info("status:{}",status);
+        log.info("ids:{}",ids);
+        Dish dish = dishService.getById(ids);
+        if (dish != null){
+            dish.setStatus(status);
+            dishService.updateById(dish);
+            return R.success("修改状态成功");
+        }
+        return R.error("售卖状态设置异常");
+    }
+
+
+
+    /**
+     * 套餐批量删除和单个删除
+     * @return
+     */
+    @DeleteMapping
+    public R<String> delete(@RequestParam("ids") List<Long> ids){
+        //删除菜品  这里的删除是逻辑删除
+        LambdaQueryWrapper<Dish> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.in(ids!=null,Dish::getId,ids);
+        List<Dish> list = dishService.list(queryWrapper);
+        for (Dish dish : list) {
+                dishService.removeById(dish.getId());
+        }
+        //删除菜品对应的口味  也是逻辑删除
+        LambdaQueryWrapper<DishFlavor> queryWrapper2 = new LambdaQueryWrapper<>();
+        queryWrapper2.in(DishFlavor::getDishId,ids);
+        dishFlavorService.remove(queryWrapper2);
+        return R.success("菜品删除成功");
+    }
 }

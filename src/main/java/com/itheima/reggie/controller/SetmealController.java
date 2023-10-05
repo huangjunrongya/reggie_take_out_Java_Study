@@ -6,6 +6,7 @@ import com.itheima.reggie.common.R;
 import com.itheima.reggie.dto.SetmealDto;
 import com.itheima.reggie.entity.Category;
 import com.itheima.reggie.entity.Setmeal;
+import com.itheima.reggie.entity.SetmealDish;
 import com.itheima.reggie.service.CategoryService;
 import com.itheima.reggie.service.SetmealDishService;
 import com.itheima.reggie.service.SetmealService;
@@ -141,5 +142,49 @@ public class SetmealController {
         List<Setmeal> list = setmealService.list(queryWrapper);
 
         return R.success(list);
+    }
+
+
+    /**
+     * 对菜品批量或者是单个 进行停售或者是起售
+     * @return
+     */
+    @PostMapping("/status/{status}")
+//这个参数这里一定记得加注解才能获取到参数，否则这里非常容易出问题
+    public R<String> status(@PathVariable("status") Integer status,@RequestParam List<Long> ids){
+        LambdaQueryWrapper<Setmeal> queryWrapper = new LambdaQueryWrapper();
+        queryWrapper.in(ids !=null,Setmeal::getId,ids);
+        List<Setmeal> list = setmealService.list(queryWrapper);
+
+        for (Setmeal setmeal : list) {
+            if (setmeal != null){
+                setmeal.setStatus(status);
+                setmealService.updateById(setmeal);
+            }
+        }
+
+        return R.success("售卖状态修改成功");
+    }
+
+    /**
+     * 回显套餐数据：根据套餐id查询套餐
+     * @return
+     */
+    @GetMapping("/{id}")
+    public R<SetmealDto> getData(@PathVariable Long id){
+        Setmeal setmeal = setmealService.getById(id);
+        SetmealDto setmealDto = new SetmealDto();
+        LambdaQueryWrapper<SetmealDish> queryWrapper = new LambdaQueryWrapper();
+        //在关联表中查询，setmealdish
+        queryWrapper.eq(id!=null,SetmealDish::getSetmealId,id);
+
+        if (setmeal != null){
+            BeanUtils.copyProperties(setmeal,setmealDto);
+            List<SetmealDish> list = setmealDishService.list(queryWrapper);
+            setmealDto.setSetmealDishes(list);
+            return R.success(setmealDto);
+
+        }
+        return null;
     }
 }
