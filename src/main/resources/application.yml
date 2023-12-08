@@ -6,7 +6,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://mysql:3306/reggie?characterEncoding=utf-8
     username: root
-    password: hhh1234
+    password: 1
   application:
     # 应用的名称，可选
     name: reggie_take_out
@@ -32,7 +32,7 @@ mybatis-plus:
     db-config:
       id-type: ASSIGN_ID
 reggie:
-  path: /root/Java/Projects/Reggie/image
+  path: /root/Java/Projects/Reggie/image/
 
 # 日志
 logging:
